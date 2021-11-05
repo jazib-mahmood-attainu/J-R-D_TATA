@@ -9,3 +9,5 @@ class Temperature:
 
 obj1 = Temperature()
 obj1.convertFahrenheit(15)
+obj2 = Temperature()
+obj2.convertFahrenheit(150)
