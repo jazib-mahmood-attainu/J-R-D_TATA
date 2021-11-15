@@ -3,7 +3,6 @@ s = 0
 e = n
 
 while s<=e:
-
     mid = (s+e)//2
     # print(mid**2)
     if mid**2 == n:
