@@ -1,6 +1,6 @@
 def MotM(overs,runs):
-    ABD = True
-    VRT = False
+    ABD = True#hes batting
+    VRT = False#offf strike
     ctr = 0
     a_r = v_r = 0
     for i in runs:
@@ -20,16 +20,14 @@ def MotM(overs,runs):
                 ABD = False
             else:
                 v_r+=i
-                # print(v_r,i)
                 VRT = False
                 ABD = True
         else:
             if ABD==True :
                 a_r+=i
-                
             else:
                 v_r+=i
-                # print(v_r,i)
+                
         ctr += 1
         # print(i,"runs",ctr,ABD,a_r,"ABD",VRT,v_r,"VRT")
     print(a_r,v_r)
