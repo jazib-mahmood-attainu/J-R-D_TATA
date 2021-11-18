@@ -13,7 +13,7 @@ def No_of_ways(x,y,n,m,grid):
 
 
 if __name__=="__main__":
-    grid = [[0,0,1,], [0,0,0],[1,0,0]]
+    grid = [[0,0,1,1], [0,0,0,0],[1,1,0,0]]
     n = len(grid)
     m = len(grid[0])
     res = No_of_ways(0,0,n,m,grid)
