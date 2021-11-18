@@ -11,7 +11,10 @@ def lower(arr,target):
             return mid
         elif arr[mid]<target:
             low = mid+1
-arr = [1,1,1,3,3,3,5,5]
+        elif arr[mid]>target:
+            high = mid-1
+arr = [1,1,1,3,3,4,5,5,5]
+#      0 1 2 3 4 5 6 7 
 target = 4
 print(lower(arr,target))
 
