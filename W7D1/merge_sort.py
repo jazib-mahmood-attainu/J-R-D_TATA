@@ -23,7 +23,7 @@ def merge(A,start_l,end_l,start_r,end_r):
     idx = 0
     while idx<len(C): #  A = C, creating a copy of C in A
         A[start_l+idx] = C[idx]
-        idx+=1
+        idx+=1  
 
 
 def merge_sort(A,low,high):#sort list A from low to high
@@ -31,8 +31,9 @@ def merge_sort(A,low,high):#sort list A from low to high
     if low==high:
         return
     merge_sort(A,low,mid)#sort list A from low to mid
+    merge
     merge_sort(A,mid+1,high)#sort list A from mid+1 to high
-    merge(A,low,mid,mid+1,high)
+    merge(A,low,mid,mid+1,high)#low = strat_l,end_l,start_r,end_r
     print(A)
 
 
