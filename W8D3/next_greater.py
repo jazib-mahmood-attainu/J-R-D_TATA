@@ -3,7 +3,7 @@ def solve(A):
     stack = list()#[]
 
     B = [0]*n
-
+    
     for idx,val in enumerate(A):
         if len(stack)==0:
             stack.append(idx)
@@ -22,5 +22,6 @@ def solve(A):
 A = [2,1,7,4,6,8,1,9]
 res = solve(A)
 print(res)
+
 
 
