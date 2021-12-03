@@ -8,5 +8,5 @@ class Solution:
                 continue
             stack.append(s[i])
                 
-        print(stack)
+        #print(stack)
         return "".join(stack)
