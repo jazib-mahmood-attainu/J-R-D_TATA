@@ -6,7 +6,6 @@ class Node:
 
 
 head = None
-
 def addNodeAtEnd(x):
     global head
     if head==None:
@@ -31,7 +30,7 @@ def addNodeAtKth(k,x):
     ctr = 1
     cur = head
 
-    while(ctr<k-1):
+    while(ctr!=k-1):
         cur  = cur.next
         ctr += 1
 
