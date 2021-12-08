@@ -6,18 +6,22 @@ class Node:
         self.val = val
         self.children = children
 """
-res = list()
+
 class Solution:
-    def preorder(self, root):
-        global res
-        if root.val == None:
+    def preorder(self, root: 'Node') -> List[int]:
+        res = []
+        res2 = self.solve(root,res)
+        return res2
+    
+    def solve(self,root,res):
+        if root == None:
             return
         cl = len(root.children)
-        
-        for i in range((cl)):
-            print(root.children[i].val)
-            if root.children[i]==None:
-                continue
-            res.extend([self.preorder(root.children[i])])
+        print(root.val)
+        res.append(root.val)
+        print(cl,"******")
+        for i in range(cl):
+            self.solve(root.children[i],res)
         return res
+        
         
